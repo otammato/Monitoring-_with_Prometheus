@@ -37,6 +37,10 @@ docker network create monitor
 
 2. ```docker run``` command to start a node exporter instance on the ```monitor``` network, listening at port ```9101``` externally and forwarding to port ```9100``` internally.
 
+```
+docker run -d --name node-exporter1 -p 9101:9100 --network monitor bitnami/node-exporter:latest
+```
+
 3. Check if the instance is running on port 9101:
 
 You should see the Node Exporter page open up with a hyperlink to Metrics. These are the metrics the Prometheus instance is going to monitor.
