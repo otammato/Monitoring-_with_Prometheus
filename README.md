@@ -80,3 +80,23 @@ If everything started correctly, you should see output similar to the following 
 ```
 touch /home/project/prometheus.yml
 ```
+2. Then, copy and paste the following configuration contents into the yaml file and save it:
+
+```yml
+# my global config
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. The default is every 1 minute.
+
+scrape_configs:
+  - job_name: 'node'
+    static_configs:
+      - targets: ['node-exporter1:9100']
+        labels:
+          group: 'monitoring_node_ex1'
+      - targets: ['node-exporter2:9100']
+        labels:
+          group: 'monitoring_node_ex2'
+      - targets: ['node-exporter3:9100']
+        labels:
+          group: 'monitoring_node_ex3'
+```
