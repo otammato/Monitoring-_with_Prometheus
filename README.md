@@ -32,3 +32,9 @@ docker pull bitnami/prometheus:latest
 You should see the Node Exporter page open up with a hyperlink to Metrics. These are the metrics the Prometheus instance is going to monitor.
 
 <img width="1064" alt="Screenshot 2023-05-26 at 22 59 39" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/f49da46a-f39e-43fd-b8d5-5501c4bc2f2d">
+
+4. Finally, click the Metrics link to see the metrics.
+
+<img width="1055" alt="Screenshot 2023-05-26 at 23 02 27" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/5f013e6c-4eca-407f-8bf5-3b36cb3b796a">
+
+
