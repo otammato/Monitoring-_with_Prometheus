@@ -76,3 +76,7 @@ If everything started correctly, you should see output similar to the following 
 ## Step 3: Configure and run Prometheus
 
 1. Use the ```touch``` command to create a file named prometheus.yml in the current directory. This is the file where you will configure the Prometheus to monitor the node exporter instances.
+
+```
+touch /home/project/prometheus.yml
+```
