@@ -106,3 +106,13 @@ scrape_configs:
 - The scrape_config section contains all the jobs that Prometheus is going to monitor. These job names have to be unique. You currently have one job called node. Later we will add another to monitor a Python application.
 - Within each job, there is a static_configs section where you define the targets and define labels for easy identification and analysis. These will show up in the Prometheus UI under the Targets tab.
 - The targets you enter here point to the base URL of the service running on each of the nodes. Prometheus will add the suffix /metrics and call that endpoint to collect the data to monitor from. (For example, node-exporter1:9100/metrics)
+
+3. Finally, you can launch the Prometheus monitor in the terminal by executing the following ```docker run``` command passing the yaml configuration file as a volume mount with the ```-v``` parameter.
+
+```
+docker run -d --name prometheus -p 9090:9090 --network monitor \
+-v $(pwd)/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml \
+bitnami/prometheus:latest
+```
+
+> Note: This Dockerized distribution of Prometheus from Bitnami expects its configuration file to be in the ```/opt/bitnami/prometheus/conf/prometheus.yml``` file, which is why you are mapping your ```prometheus.yml``` file to this location. Other distributions may look in other locations. Always check the documentation to be sure of where to mount the configuration file.
