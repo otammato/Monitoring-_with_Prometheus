@@ -29,6 +29,8 @@ docker pull bitnami/prometheus:latest
 
 ## Step 1: Start the first node exporter
 
+1. ```docker network``` command to create a network called ```monitor``` within which we will run all of the docker containers.
+
 3. Check if the instance is running on port 9101:
 
 You should see the Node Exporter page open up with a hyperlink to Metrics. These are the metrics the Prometheus instance is going to monitor.
