@@ -54,3 +54,4 @@ You should see the Node Exporter page open up with a hyperlink to Metrics. These
 
 ## Step 2: Start two more node exporters
 
+1. In the terminal, run the following commands to start two more instances of node exporter.
