@@ -68,3 +68,7 @@ docker run -d --name node-exporter3 -p 9103:9100 --network monitor bitnami/node-
 ```
 docker ps | grep node-exporter
 ```
+
+If everything started correctly, you should see output similar to the following coming back from the ```docker ps``` command:
+
+<img width="1171" alt="Screenshot 2023-05-26 at 23 23 22" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/5aae71c3-370c-4e0c-82b7-43b15d118bb6">
