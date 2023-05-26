@@ -27,6 +27,8 @@ docker pull bitnami/prometheus:latest
 
 <img width="608" alt="Screenshot 2023-05-26 at 22 50 35" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/29bd3076-f045-408e-8ef8-1503f30afa1f">
 
+## Step 1: Start the first node exporter
+
 3. Check if the instance is running on port 9101:
 
 You should see the Node Exporter page open up with a hyperlink to Metrics. These are the metrics the Prometheus instance is going to monitor.
