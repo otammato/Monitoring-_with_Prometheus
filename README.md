@@ -40,6 +40,7 @@ docker network create monitor
 ```
 docker run -d --name node-exporter1 -p 9101:9100 --network monitor bitnami/node-exporter:latest
 ```
+<img width="923" alt="Screenshot 2023-05-26 at 23 11 15" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/cf8334c0-7b20-4df4-9443-c22725a70c61">
 
 3. Check if the instance is running on port 9101:
 
