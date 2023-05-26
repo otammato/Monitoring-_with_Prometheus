@@ -37,4 +37,5 @@ You should see the Node Exporter page open up with a hyperlink to Metrics. These
 
 <img width="1055" alt="Screenshot 2023-05-26 at 23 02 27" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/5f013e6c-4eca-407f-8bf5-3b36cb3b796a">
 
+## Step 2: Start two more node exporters
 
