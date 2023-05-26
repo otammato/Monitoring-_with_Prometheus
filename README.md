@@ -74,3 +74,5 @@ If everything started correctly, you should see output similar to the following 
 <img width="1171" alt="Screenshot 2023-05-26 at 23 23 22" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/5aae71c3-370c-4e0c-82b7-43b15d118bb6">
 
 ## Step 3: Configure and run Prometheus
+
+1. Use the ```touch``` command to create a file named prometheus.yml in the current directory. This is the file where you will configure the Prometheus to monitor the node exporter instances.
