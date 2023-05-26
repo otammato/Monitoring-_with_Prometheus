@@ -100,3 +100,4 @@ scrape_configs:
         labels:
           group: 'monitoring_node_ex3'
 ```
+> Notice that while you access the node exporters externally on ports 9101, 9102, and 9103, they are internally all listening on port 9100, which is how Prometheus will communicate them on the monitor network.
