@@ -18,3 +18,5 @@ I use Docker to run both Prometheus, and special Node Exporters, which will beha
 docker pull bitnami/node-exporter:latest
 ```
 <img width="591" alt="Screenshot 2023-05-26 at 22 47 53" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/d1b566f2-7d74-4892-be73-c0bb31f01cde">
+
+2. Then, pull the Prometheus docker image.
