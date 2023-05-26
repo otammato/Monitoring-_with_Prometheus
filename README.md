@@ -55,3 +55,16 @@ You should see the Node Exporter page open up with a hyperlink to Metrics. These
 ## Step 2: Start two more node exporters
 
 1. In the terminal, run the following commands to start two more instances of node exporter.
+
+```
+docker run -d --name node-exporter2 -p 9102:9100 --network monitor bitnami/node-exporter:latest
+```
+```
+docker run -d --name node-exporter3 -p 9103:9100 --network monitor bitnami/node-exporter:latest
+```
+
+2. Now, check if all the instances of node exporter are running by using the ```docker ps``` command and pipe it through the grep command to search for ```node-exporter```
+
+```
+docker ps | grep node-exporter
+```
