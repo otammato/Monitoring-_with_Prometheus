@@ -116,3 +116,5 @@ bitnami/prometheus:latest
 ```
 
 > Note: This Dockerized distribution of Prometheus from Bitnami expects its configuration file to be in the ```/opt/bitnami/prometheus/conf/prometheus.yml``` file, which is why you are mapping your ```prometheus.yml``` file to this location. Other distributions may look in other locations. Always check the documentation to be sure of where to mount the configuration file.
+
+You should see just the Prometheus container id returned, indicating that Docker has started Prometheus in the background.
