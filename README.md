@@ -24,3 +24,5 @@ docker pull bitnami/node-exporter:latest
 ```
 docker pull bitnami/prometheus:latest
 ```
+
+<img width="608" alt="Screenshot 2023-05-26 at 22 50 35" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/29bd3076-f045-408e-8ef8-1503f30afa1f">
