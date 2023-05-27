@@ -220,3 +220,5 @@ if __name__ == '__main__':
 ```
 
 > Notice that you only had to import the ```PrometheusMetrics``` class from the ```prometheus_flask_exporter``` package and add two lines of code to instantiate a ```PrometheusMetrics.for_app_factory()``` as metrics, and call ```metrics.init_app(app)``` to initialize it. That is it! Three total lines of code, and you have Prometheus support!
+
+3. Next, you need to deploy this code on the same docker network as Prometheus. To do this, create a file named ```Dockerfile``` in the project folder:
