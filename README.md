@@ -110,9 +110,7 @@ scrape_configs:
 3. Finally, you can launch the Prometheus monitor in the terminal by executing the following ```docker run``` command passing the yaml configuration file as a volume mount with the ```-v``` parameter.
 
 ```
-docker run -d --name prometheus -p 9090:9090 --network monitor \
--v $(pwd)/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml \
-bitnami/prometheus:latest
+sudo docker run -d --name prometheus2 -p 9091:9090 --network monitor -v $(pwd)/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml bitnami/prometheus:latest
 ```
 
 > Note: This Dockerized distribution of Prometheus from Bitnami expects its configuration file to be in the ```/opt/bitnami/prometheus/conf/prometheus.yml``` file, which is why you are mapping your ```prometheus.yml``` file to this location. Other distributions may look in other locations. Always check the documentation to be sure of where to mount the configuration file.
