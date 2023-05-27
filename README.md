@@ -178,3 +178,5 @@ docker stop node-exporter1
 You should now see that one of the node exporters that are being monitored is down. The nodes might not be displayed in the same order, but the node which is should be ```node-exporter1```, the node that you stopped.
 
 <img width="711" alt="Screenshot 2023-05-27 at 10 10 22" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/b79a6af0-1776-44d7-a5d8-6e65be9eaa65">
+
+## Step 7: Enable your application
