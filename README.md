@@ -135,3 +135,5 @@ You should see just the Prometheus container id returned, indicating that Docker
 3. Next, in the Prometheus application, click Status on the menu and choose Targets to see which targets are being monitored.
 
 <img width="918" alt="Screenshot 2023-05-27 at 09 24 29" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2abab823-ee91-4b68-83b9-f565441698b7">
+
+## Step 5: Execute your first query
