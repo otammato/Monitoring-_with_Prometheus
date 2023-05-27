@@ -126,15 +126,15 @@ You should see just the Prometheus container id returned, indicating that Docker
 
 1. Open the Prometheus web UI by using the Public IPv4 DNS or just IP of your server plus the port assigned (9091 in our case, MAKE SURE IT IS OPEN). The Prometheus application UI opens up by default in the graph endpoint. 
 
-<img width="911" alt="Screenshot 2023-05-27 at 09 14 47" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/6ff6a3f5-cc64-428e-8ba5-e71c9f15f86f">
+<img width="711" alt="Screenshot 2023-05-27 at 09 14 47" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/6ff6a3f5-cc64-428e-8ba5-e71c9f15f86f">
 
 2. Next, in the Prometheus application, click Status on the menu and choose Targets to see which targets are being monitored.
 
-<img width="911" alt="Screenshot 2023-05-27 at 09 20 37" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/e56863d4-8b72-47dd-b29e-feee96a895ad">
+<img width="711" alt="Screenshot 2023-05-27 at 09 20 37" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/e56863d4-8b72-47dd-b29e-feee96a895ad">
 
 3. Next, in the Prometheus application, click Status on the menu and choose Targets to see which targets are being monitored.
 
-<img width="918" alt="Screenshot 2023-05-27 at 09 24 29" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2abab823-ee91-4b68-83b9-f565441698b7">
+<img width="711" alt="Screenshot 2023-05-27 at 09 24 29" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2abab823-ee91-4b68-83b9-f565441698b7">
 
 ## Step 5: Execute your query
 
@@ -145,8 +145,8 @@ The first query you run will query the nodes for the total CPU seconds. It will 
 ```
 node_cpu_seconds_total
 ```
-<img width="957" alt="Screenshot 2023-05-27 at 09 40 01" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/72598be9-47cb-4202-82d2-a36c4d056872">
+<img width="711" alt="Screenshot 2023-05-27 at 09 40 01" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/72598be9-47cb-4202-82d2-a36c4d056872">
 
 2. Next, click Table to see the CPU seconds for all the targets in tabular format.
 
-<img width="924" alt="Screenshot 2023-05-27 at 09 43 13" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2b4ddfd8-6c9c-4f24-91fc-f5b6835b19da">
+<img width="711" alt="Screenshot 2023-05-27 at 09 43 13" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2b4ddfd8-6c9c-4f24-91fc-f5b6835b19da">
