@@ -131,3 +131,7 @@ You should see just the Prometheus container id returned, indicating that Docker
 2. Next, in the Prometheus application, click Status on the menu and choose Targets to see which targets are being monitored.
 
 <img width="911" alt="Screenshot 2023-05-27 at 09 20 37" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/e56863d4-8b72-47dd-b29e-feee96a895ad">
+
+3. Next, in the Prometheus application, click Status on the menu and choose Targets to see which targets are being monitored.
+
+<img width="918" alt="Screenshot 2023-05-27 at 09 24 29" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2abab823-ee91-4b68-83b9-f565441698b7">
