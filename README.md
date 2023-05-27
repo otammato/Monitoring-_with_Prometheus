@@ -117,4 +117,6 @@ sudo docker run -d --name prometheus2 -p 9091:9090 --network monitor -v $(pwd)/p
 
 You should see just the Prometheus container id returned, indicating that Docker has started Prometheus in the background.
 
-> Note: to see the process is currently using the port ```sudo lsof -i :9091```
+> Note: to see the process currently using the port ```sudo lsof -i :9091```
+> <img width="522" alt="Screenshot 2023-05-27 at 09 03 48" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/843a8c30-cee4-4de7-ac9e-67435671272d">
+
