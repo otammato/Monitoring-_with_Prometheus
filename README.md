@@ -164,7 +164,7 @@ node_os_info
 ```
 <img width="711" alt="Screenshot 2023-05-27 at 09 52 34" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/6d09fcc4-4a5b-4252-8d44-7f929ac03a55">
 
-Step 6: Stop and observe
+## Step 6: Stop and observe
 
 In this step, we will stop one of the node exporter instances and see how that is reflected in the Prometheus console.
 
