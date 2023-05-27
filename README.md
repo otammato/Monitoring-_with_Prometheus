@@ -218,3 +218,5 @@ def contact():
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8080)
 ```
+
+> Notice that you only had to import the PrometheusMetrics class from the prometheus_flask_exporter package and add two lines of code to instantiate a PrometheusMetrics.for_app_factory() as metrics, and call metrics.init_app(app) to initialize it. That is it! Three total lines of code, and you have Prometheus support!
