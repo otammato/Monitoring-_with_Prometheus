@@ -174,3 +174,5 @@ In this step, we will stop one of the node exporter instances and see how that i
 docker stop node-exporter1
 ```
 2. Now go back to the Prometheus UI on your browser and check the targets by selecting the menu item Status -> Targets.
+
+You should now see that one of the node exporters that are being monitored is down. The nodes might not be displayed in the same order, but the node which is should be ```node-exporter1```, the node that you stopped.
