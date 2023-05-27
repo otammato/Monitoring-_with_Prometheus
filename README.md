@@ -123,3 +123,7 @@ You should see just the Prometheus container id returned, indicating that Docker
 <img width="951" alt="Screenshot 2023-05-27 at 09 06 16" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/31c70352-7dce-43d6-80f6-de667801678e">
 
 ## Step 4: Open the Prometheus UI
+
+1. Open the Prometheus web UI by using the Public IPv4 DNS or just IP of your server plus the port assigned (9091 in our case)
+
+<img width="911" alt="Screenshot 2023-05-27 at 09 14 47" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/6ff6a3f5-cc64-428e-8ba5-e71c9f15f86f">
