@@ -156,3 +156,10 @@ node_cpu_seconds_total
 node_cpu_seconds_total{instance="node-exporter2:9100"}
 ```
 <img width="711" alt="Screenshot 2023-05-27 at 09 47 38" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/a90d2ea8-8c70-47a8-adaf-13c4dc829e9e">
+
+4. Finally, run this query to find about the OS's of each node
+
+```
+node_os_info
+```
+<img width="711" alt="Screenshot 2023-05-27 at 09 52 34" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/6d09fcc4-4a5b-4252-8d44-7f929ac03a55">
