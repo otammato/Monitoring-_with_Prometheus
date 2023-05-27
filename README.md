@@ -78,7 +78,7 @@ If everything started correctly, you should see output similar to the following 
 1. Use the ```touch``` command to create a file named prometheus.yml in the current directory. This is the file where you will configure the Prometheus to monitor the node exporter instances.
 
 ```
-touch /home/project/prometheus.yml
+touch /home/ubuntu/prometheus.yml
 ```
 2. Then, copy and paste the following configuration contents into the yaml file and save it:
 
