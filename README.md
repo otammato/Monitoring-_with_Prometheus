@@ -127,3 +127,7 @@ You should see just the Prometheus container id returned, indicating that Docker
 1. Open the Prometheus web UI by using the Public IPv4 DNS or just IP of your server plus the port assigned (9091 in our case, MAKE SURE IT IS OPEN). The Prometheus application UI opens up by default in the graph endpoint. 
 
 <img width="911" alt="Screenshot 2023-05-27 at 09 14 47" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/6ff6a3f5-cc64-428e-8ba5-e71c9f15f86f">
+
+2. Next, in the Prometheus application, click Status on the menu and choose Targets to see which targets are being monitored.
+
+<img width="911" alt="Screenshot 2023-05-27 at 09 20 37" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/e56863d4-8b72-47dd-b29e-feee96a895ad">
