@@ -305,3 +305,7 @@ docker restart prometheus
 5. Check the Prometheus UI to see the new Targets.
 
 <img width="711" alt="Screenshot 2023-05-27 at 18 20 04" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/e9df0ab1-3844-4828-b731-b594bb046d44">
+
+If everything went well, when you open the Prometheus targets, you will see the status of your Python server as in the image below.
+
+<img width="711" alt="Screenshot 2023-05-27 at 18 23 43" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/0da7d077-f471-405b-b301-0e4f68a6ad36">
