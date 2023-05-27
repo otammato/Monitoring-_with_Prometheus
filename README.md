@@ -309,3 +309,20 @@ docker restart prometheus
 If everything went well, when you open the Prometheus targets, you will see the status of your Python server as in the image below.
 
 <img width="711" alt="Screenshot 2023-05-27 at 18 23 43" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/0da7d077-f471-405b-b301-0e4f68a6ad36">
+
+## Step 9: Monitor your application
+
+In order to see some results of monitoring, you need to generate some network traffic.
+
+2. Make multiple requests to the three endpoints of the Python server you created in the previous task and observe these calls on Prometheus.
+
+```
+curl localhost:8081
+curl localhost:8081/home
+curl localhost:8081/contact
+```
+1. Use the Prometheus UI to query for the following metrics.
+
+```flask_http_request_duration_seconds_bucket```
+```flask_http_request_total```
+```process_virtual_memory_bytes```
