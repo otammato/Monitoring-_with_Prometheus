@@ -150,3 +150,9 @@ node_cpu_seconds_total
 2. Next, click Table to see the CPU seconds for all the targets in tabular format.
 
 <img width="711" alt="Screenshot 2023-05-27 at 09 43 13" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2b4ddfd8-6c9c-4f24-91fc-f5b6835b19da">
+
+3 Now, filter the query to get the details for only one instance node-exporter2 using the following query.
+
+```
+node_cpu_seconds_total{instance="node-exporter2:9100"}
+```
