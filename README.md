@@ -145,3 +145,4 @@ The first query you run will query the nodes for the total CPU seconds. It will 
 ```
 node_cpu_seconds_total
 ```
+<img width="957" alt="Screenshot 2023-05-27 at 09 40 01" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/72598be9-47cb-4202-82d2-a36c4d056872">
