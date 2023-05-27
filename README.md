@@ -27,6 +27,8 @@ docker pull bitnami/prometheus:latest
 
 <img width="608" alt="Screenshot 2023-05-26 at 22 50 35" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/29bd3076-f045-408e-8ef8-1503f30afa1f">
 
+<br>
+
 ## Step 1: Start the first node exporter
 
 1. ```docker network``` command to create a network called ```monitor``` within which we will run all of the docker containers.
@@ -52,6 +54,8 @@ You should see the Node Exporter page open up with a hyperlink to Metrics. These
 
 <img width="1055" alt="Screenshot 2023-05-26 at 23 02 27" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/5f013e6c-4eca-407f-8bf5-3b36cb3b796a">
 
+<br>
+
 ## Step 2: Start two more node exporters
 
 1. In the terminal, run the following commands to start two more instances of node exporter.
@@ -72,6 +76,8 @@ docker ps | grep node-exporter
 If everything started correctly, you should see output similar to the following coming back from the ```docker ps``` command:
 
 <img width="1171" alt="Screenshot 2023-05-26 at 23 23 22" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/5aae71c3-370c-4e0c-82b7-43b15d118bb6">
+
+<br>
 
 ## Step 3: Configure and run Prometheus
 
@@ -122,6 +128,8 @@ You should see just the Prometheus container id returned, indicating that Docker
 
 <img width="951" alt="Screenshot 2023-05-27 at 09 06 16" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/31c70352-7dce-43d6-80f6-de667801678e">
 
+<br>
+
 ## Step 4: Open the Prometheus UI
 
 1. Open the Prometheus web UI by using the Public IPv4 DNS or just IP of your server plus the port assigned (9091 in our case, MAKE SURE IT IS OPEN). The Prometheus application UI opens up by default in the graph endpoint. 
@@ -135,6 +143,8 @@ You should see just the Prometheus container id returned, indicating that Docker
 3. Next, in the Prometheus application, click Status on the menu and choose Targets to see which targets are being monitored.
 
 <img width="711" alt="Screenshot 2023-05-27 at 09 24 29" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2abab823-ee91-4b68-83b9-f565441698b7">
+
+<br>
 
 ## Step 5: Execute your query
 
@@ -164,6 +174,8 @@ node_os_info
 ```
 <img width="711" alt="Screenshot 2023-05-27 at 09 52 34" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/6d09fcc4-4a5b-4252-8d44-7f929ac03a55">
 
+<br>
+
 ## Step 6: Stop and observe
 
 In this step, we will stop one of the node exporter instances and see how that is reflected in the Prometheus console.
@@ -178,6 +190,8 @@ docker stop node-exporter1
 You should now see that one of the node exporters that are being monitored is down. The nodes might not be displayed in the same order, but the node which is should be ```node-exporter1```, the node that you stopped.
 
 <img width="711" alt="Screenshot 2023-05-27 at 10 10 22" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/b79a6af0-1776-44d7-a5d8-6e65be9eaa65">
+
+<br>
 
 ## Step 7: Enable your application
 
