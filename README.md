@@ -262,7 +262,7 @@ vi prometheus.yml
 ```
 2. Next, create a new job to monitor the pythonserver service that is listening on port 8080. Use the previous job as an example.
 
-```
+```yml
   - job_name: 'monitorPythonserver'
     static_configs:
       - targets: ['pythonserver:8080']
