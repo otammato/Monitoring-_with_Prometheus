@@ -237,3 +237,15 @@ COPY pythonserver.py .
 EXPOSE 8080
 CMD ["python", "pythonserver.py"]
 ```
+
+4. Now, use the docker build command to build a Docker image for the service (Note: You can safely ignore any red output from the docker build command. It just warns about running pip as root):
+
+```
+docker build -t pythonserver .
+```
+
+5. Finally, run the pythonserver Docker container on the monitor network exposing port 8080 so that Prometheus will have access to it:
+
+```
+docker run -d --name pythonserver -p 8081:8080 --network monitor pythonserver
+```
