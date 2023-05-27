@@ -185,3 +185,7 @@ In order for Prometheus to be able to monitor your application, you must set up 
 
 Python package called Prometheus Flask exporter for Prometheus will do this for us. In this step, we will create a simple Python Flask application and enable a metrics endpoint so that you can monitor it.
 
+Below is a code for a Python Flask server with three end points, ```/```, ```/home```, and ```/contact```. The code uses the package ```prometheus_flask_exporter``` for generating metrics for Prometheus to monitor.
+
+
+
