@@ -328,3 +328,8 @@ curl localhost:8081/contact
 ```flask_http_request_total```
 
 ```process_virtual_memory_bytes```
+
+If you are interested in what other metrics are being emitted by your application, you can view all of the metrics that your application is emitting by opening the ```/metrics``` endpoint just like Prometheus does. Feel free to experiment by running queries against other metrics:
+
+<img width="711" alt="Screenshot 2023-05-27 at 18 32 57" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/0775a19b-851f-47b2-8948-745aa7244e47">
+
