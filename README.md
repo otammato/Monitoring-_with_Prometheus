@@ -296,3 +296,9 @@ scrape_configs:
         labels:
           group: 'monitoring_node_ex3'
 ```
+
+4. Restart the prometheus server to pick up the new configuration changes:
+
+```
+docker restart prometheus
+```
