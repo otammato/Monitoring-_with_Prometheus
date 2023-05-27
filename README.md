@@ -151,8 +151,8 @@ node_cpu_seconds_total
 
 <img width="711" alt="Screenshot 2023-05-27 at 09 43 13" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2b4ddfd8-6c9c-4f24-91fc-f5b6835b19da">
 
-3 Now, filter the query to get the details for only one instance node-exporter2 using the following query.
-
+3. Now, filter the query to get the details for only one instance node-exporter2 using the following query.
 ```
 node_cpu_seconds_total{instance="node-exporter2:9100"}
 ```
+<img width="711" alt="Screenshot 2023-05-27 at 09 47 38" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/a90d2ea8-8c70-47a8-adaf-13c4dc829e9e">
