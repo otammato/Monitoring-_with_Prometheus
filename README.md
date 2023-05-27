@@ -268,6 +268,7 @@ vi prometheus.yml
       - targets: ['pythonserver:8080']
         labels:
           group: 'monitoring_python'
+ ```
           
  3. The complete prometheus.yml file must now look like this:
  
