@@ -137,3 +137,6 @@ You should see just the Prometheus container id returned, indicating that Docker
 <img width="918" alt="Screenshot 2023-05-27 at 09 24 29" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/2abab823-ee91-4b68-83b9-f565441698b7">
 
 ## Step 5: Execute your query
+
+The first query you run will query the nodes for the total CPU seconds. It will show the graph as given in the image. You can observe the details for each instance by hovering the mouse over that instance.
+
