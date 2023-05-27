@@ -173,3 +173,4 @@ In this step, we will stop one of the node exporter instances and see how that i
 ```
 docker stop node-exporter1
 ```
+2. Now go back to the Prometheus UI on your browser and check the targets by selecting the menu item Status -> Targets.
