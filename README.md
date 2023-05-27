@@ -324,5 +324,7 @@ curl localhost:8081/contact
 1. Use the Prometheus UI to query for the following metrics.
 
 ```flask_http_request_duration_seconds_bucket```
+
 ```flask_http_request_total```
+
 ```process_virtual_memory_bytes```
