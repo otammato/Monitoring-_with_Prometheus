@@ -187,5 +187,34 @@ Python package called Prometheus Flask exporter for Prometheus will do this for 
 
 Below is a code for a Python Flask server with three end points, ```/```, ```/home```, and ```/contact```. The code uses the package ```prometheus_flask_exporter``` for generating metrics for Prometheus to monitor.
 
+1. First, create a file named ```pythonserver.py``` in your working directory.
 
+```
+touch pythonserver.py
+```
 
+2. Then, paste the following code content into it:
+
+```py
+from prometheus_flask_exporter import PrometheusMetrics
+from flask import Flask
+
+app = Flask(__name__)
+metrics = PrometheusMetrics.for_app_factory()
+metrics.init_app(app)
+
+@app.route('/')
+def root():
+    return 'Hello from root!'
+
+@app.route('/home')
+def home():
+    return 'Hello from home!'
+
+@app.route('/contact')
+def contact():
+    return 'Contact us!'
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=8080)
+```
