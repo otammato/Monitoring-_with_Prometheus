@@ -249,3 +249,4 @@ docker build -t pythonserver .
 ```
 docker run -d --name pythonserver -p 8081:8080 --network monitor pythonserver
 ```
+## Step 8: Reconfigure Prometheus
