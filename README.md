@@ -250,3 +250,5 @@ docker build -t pythonserver .
 docker run -d --name pythonserver -p 8081:8080 --network monitor pythonserver
 ```
 ## Step 8: Reconfigure Prometheus
+
+To make ```Prometheus``` know about the new pythonserver node to monitor you must add the Python server as a target in your prometheus.yml file.
