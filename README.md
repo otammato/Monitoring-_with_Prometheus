@@ -260,3 +260,38 @@ To make ```Prometheus``` know about the new pythonserver node to monitor you mus
 ```
 vi prometheus.yml
 ```
+2. Next, create a new job to monitor the pythonserver service that is listening on port 8080. Use the previous job as an example.
+
+```
+  - job_name: 'monitorPythonserver'
+    static_configs:
+      - targets: ['pythonserver:8080']
+        labels:
+          group: 'monitoring_python'
+          
+ 3. The complete prometheus.yml file must now look like this:
+ 
+```yml
+# my global config
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. The default is every 1 minute.
+
+scrape_configs:
+  - job_name: 'monitorPythonserver'
+    static_configs:
+      - targets: ['pythonserver:8080']
+        labels:
+          group: 'monitoring_python'
+
+  - job_name: 'node'
+    static_configs:
+      - targets: ['node-exporter1:9100']
+        labels:
+          group: 'monitoring_node_ex1'
+      - targets: ['node-exporter2:9100']
+        labels:
+          group: 'monitoring_node_ex2'
+      - targets: ['node-exporter3:9100']
+        labels:
+          group: 'monitoring_node_ex3'
+```
