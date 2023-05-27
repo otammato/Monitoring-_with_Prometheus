@@ -169,3 +169,7 @@ node_os_info
 In this step, we will stop one of the node exporter instances and see how that is reflected in the Prometheus console.
 
 1. Stop the node-exporter1 instance by running the following ```docker stop``` command and then switch back to the old terminal in which Prometheus is running.
+
+```
+docker stop node-exporter1
+```
