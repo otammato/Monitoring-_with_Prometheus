@@ -180,3 +180,8 @@ You should now see that one of the node exporters that are being monitored is do
 <img width="711" alt="Screenshot 2023-05-27 at 10 10 22" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/b79a6af0-1776-44d7-a5d8-6e65be9eaa65">
 
 ## Step 7: Enable your application
+
+In order for Prometheus to be able to monitor your application, you must set up your application to emit metrics on an endpoint called ```/metrics```.
+
+Python package called Prometheus Flask exporter for Prometheus will do this for us. In this step, we will create a simple Python Flask application and enable a metrics endpoint so that you can monitor it.
+
