@@ -124,6 +124,6 @@ You should see just the Prometheus container id returned, indicating that Docker
 
 ## Step 4: Open the Prometheus UI
 
-1. Open the Prometheus web UI by using the Public IPv4 DNS or just IP of your server plus the port assigned (9091 in our case). The Prometheus application UI opens up by default in the graph endpoint.
+1. Open the Prometheus web UI by using the Public IPv4 DNS or just IP of your server plus the port assigned (9091 in our case, MAKE SURE IT IS OPEN). The Prometheus application UI opens up by default in the graph endpoint. 
 
 <img width="911" alt="Screenshot 2023-05-27 at 09 14 47" src="https://github.com/otammato/Monitoring_with_Prometheus/assets/104728608/6ff6a3f5-cc64-428e-8ba5-e71c9f15f86f">
