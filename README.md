@@ -229,7 +229,7 @@ touch Dockerfile
 
 Paste the following contents into Dockerfile and save it:
 
-```docker
+```py
 FROM python:3.9-slim
 RUN pip install Flask prometheus-flask-exporter
 WORKDIR /app
