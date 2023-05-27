@@ -140,3 +140,8 @@ You should see just the Prometheus container id returned, indicating that Docker
 
 The first query you run will query the nodes for the total CPU seconds. It will show the graph as given in the image. You can observe the details for each instance by hovering the mouse over that instance.
 
+1. Ensure you are on the Graph tab, and then copy-n-paste the following query and press the blue Execute button.
+
+```
+node_cpu_seconds_total
+```
